@@ -1,0 +1,20 @@
+<ion-header>
+        <ion-searchbar (ionInput)="getItems($event)" [debounce]="10" placeholder="업종, 상점명 등을 검색"></ion-searchbar>
+      </ion-header>
+      <ion-content no-padding id="page1">
+        <!-- <form id="HanSOOP-form3">
+        </form> -->
+          <!-- <ion-list>
+              <ion-item *ngFor="let s of items">        
+                  <ion-avatar item-start>
+                    <img (click)="goDetail(s.id)" src="{{s.logo}}">
+                  </ion-avatar>
+                <span class="infoArea">
+                  <h2>{{s.name}}</h2>
+                  <h3 (click)="toCall(s.detail.phone)">{{s.detail.phone}}</h3>      
+                </span>
+                <span class="phoneButton">
+                  <p>phone</p>
+                </span>
+              </ion-item>
+          </ion-list> -->

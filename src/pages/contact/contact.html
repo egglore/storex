@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar no-padding>
+    <ion-title>Contact</ion-title>
+    <!-- <ion-toolbar color="hansoop" no-padding no-margin>
+      <ion-searchbar (ionInput)="getItems($event)" (ionCancel)="getItems('$event')" [debounce]="10" placeholder="업종, 상점명 등을 검색"></ion-searchbar>
+    </ion-toolbar> -->
+  </ion-navbar>  
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>수정할 정보가 있으면 메일로 알려주세요~!</ion-list-header>
+    <ion-item>
+      <a [href]="'mailto:hunyou82@gmail.com?Subject=My%20Custom%20Subject'">
+        hunyou82@gmail.com
+      </a> 
+    </ion-item>
+  </ion-list>
+    <!-- <form (ngSubmit)="logForm()">
+      <ion-item>
+        <ion-textarea rows="5" [(ngModel)]="todo.description" name="description"></ion-textarea>
+      </ion-item>
+      <button ion-button type="submit" block>Add Todo</button>
+    </form> -->
+</ion-content>

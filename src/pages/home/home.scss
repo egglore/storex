@@ -1,0 +1,127 @@
+page-home {
+    // .label {
+    //     margin: 0;
+    //  }     
+     .item-inner {
+        padding-right: 0px!important;
+     }    
+    // .item[no-lines] .item-inner {
+    //     padding: 0px;
+    // }    
+    ion-header {   
+        margin: 0px;
+        padding: 0px;
+        background-color: #ffb70f;
+    }
+    ion-navbar {
+        //background: transparent;
+        background-color: green;
+    }
+    ion-toolbar {
+        margin: 0px;
+    }
+    ion-title {
+        // padding: 0 15px 1px;
+        // width: 100%;
+        margin: 0px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        height: 26px;
+        text-align: center;
+        background-color: #ffb70f;
+    }
+    ion-searchbar {
+        margin: 0 auto;
+        padding: 0px;
+        width: 90%;    
+        background-color: #ffb70f;
+    }
+    ion-content scroll-content {
+        margin-top:0px !important;        
+        padding: 0px;
+    }
+    ion-label { 
+        margin:0px !important;
+        padding: 0px;
+    }
+    .categoryArea { 
+        background-color: #efefef;
+        vertical-align: middle;
+        height: 30px;
+        padding-top: 6px;
+        padding-left: 6px;
+    }
+    .itemWrap {
+        width: 100px;
+        height: 130px;
+        display: inline-block;
+    }
+    .infoArea {
+        float: left;
+        background-color: green;
+        width: 100px;
+        height: 30px;
+    }
+    .infoArea2 {
+        background-color: green;
+        width: 80px;
+        height: 30px;
+    }    
+    .imgArea {
+        width: 100px;
+        height: 100px;
+    }
+    .nameArea {
+        text-align: center; 
+        margin: 2px;
+    }
+    .phoneArea {
+        text-align: center; 
+        margin: 2px;
+    }
+    .phoneButton{
+        float: right;
+        background-color: goldenrod;
+        width: 80px;
+        height: 30px;
+    }
+    ion-scroll{
+        height:160px;
+        width:100%;
+        white-space:nowrap;
+    }
+      .storeItemContainer{
+        width: 100%;
+      }
+      .myItem{
+        background-color: #fff;
+        display: inline-block !important;
+        //height: 130px;
+        margin: 5px;
+        //text-align: center;
+        //text-decoration: none;
+        //text-shadow: none;
+        width: 100px;
+      }
+      .myItem:nth-child(2n+2) {
+        background-color: #fff;
+        color: #e1e1e1;
+      }
+      .myItem:first-child{
+        margin-left: 5px;
+      }
+    // INSIDE SCSS FILE
+    // .verticalLine {
+    //     width:1%;
+    //     height:75%;
+    //     background:green;
+    //     margin: auto;
+    //   }
+  
+    // .list a.item {
+    //     border-top: 0px;
+    //     border-left: 0px;
+    //     border-right: 0px;
+    //     border-bottom: 0px;
+    // }      
+}

@@ -1,0 +1,48 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>!-->
+<ion-header>
+  <ion-navbar no-padding>
+    <ion-title>..에는 뭐가있지?</ion-title>
+    <ion-toolbar color="hansoop" no-padding no-margin>
+      <ion-searchbar (ionInput)="getItems($event)" (ionCancel)="getItems('$event')" [debounce]="10" placeholder="업종, 상점명 등을 검색"></ion-searchbar>
+    </ion-toolbar>
+  </ion-navbar>  
+</ion-header>
+<ion-content no-padding id="page1">
+  <!-- <form id="HanSOOP-form3">
+  </form> -->
+    <ion-list [hidden]="!search" no-padding >
+        <ion-item *ngFor="let s of items">                    
+            <ion-avatar item-start>
+              <img (click)="goDetail(s.id)" src="{{s.logo}}">
+            </ion-avatar>
+          <span class="infoArea">
+            <h2>{{s.name}}</h2>
+            <h3 (click)="toCall(s.detail.phone)">{{s.detail.phone}}</h3>      
+          </span>
+          <span class="phoneButton">
+            <p>phone</p>
+          </span>
+        </ion-item>
+    </ion-list>
+    <!-- <input [(ngModel)]="searchText" placeholder="search text goes here"> -->
+    <ion-list [hidden]="search">
+        <ion-item *ngFor="let r of rowItems" no-padding no-lines>
+          <p class="categoryArea">{{r}}</p>
+            <ion-scroll scrollX="true">
+                
+                    <div class="myItem" *ngFor="let s of items | filter : r">
+                        <div class="itemWrap">
+                            <p class="nameArea">{{s.name}}</p>
+                            <img class="imgArea" (click)="goDetail(s.id)" src="{{s.logo}}">                    
+                            <p class="phoneArea" (click)="toCall(s.detail.phone)">{{s.detail.phone}}</p>                    
+                        </div>
+                    </div>                                             
+                   
+            </ion-scroll>   
+        </ion-item>
+    </ion-list>    
+</ion-content>

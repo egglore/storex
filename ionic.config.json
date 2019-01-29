@@ -1,0 +1,7 @@
+{
+  "name": "storex",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      Page Detail
+    </ion-title>
+
+    <ion-buttons end>
+
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+detail
+<img src="assets/imgs/maps/{{id}}.png">
+<kakao-maps [mapConfig]="mapConfig"></kakao-maps>
+<button (click)="addOverlay()">addOverlay</button>
+<button (click)="removeOverlay()">removeOverlay</button>
+<button (click)="changeLayout()">changeLayout</button>
+<button (click)="addMarker()">addMarker</button>
+<button (click)="removeMarker()">removeMarker</button>
+<button (click)="addToolbox()">addToolbox</button>
+<button (click)="getPosition()">getPosition</button>
+<p>{{position}}</p>
+</ion-content>
